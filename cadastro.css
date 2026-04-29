@@ -1,0 +1,120 @@
+/* RESET PADRÃO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-areas:
+        "cabeca"
+        "corpo"
+        "peh";
+    grid-template-columns: 1fr; 
+    grid-template-rows: 100px auto 100px; 
+    min-height: 100vh;
+}
+header { 
+    background-color: #6C5234; grid-area: cabeca;
+ }
+footer {
+     background-color: #6C5234; grid-area: peh; 
+}
+main {
+    background-color: #E5D7C4; 
+    grid-area: corpo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.cadastro1 {
+    width: 100%;
+    max-width: 450px;
+}
+.cadastro2 {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.cadastro2 h2 {
+    color: #4b553b;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.subtitulo {
+    color: #888;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+.campo {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4b553b;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.campo input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 16px;
+}
+.btn-cadastrar {
+    width: 100%;
+    padding: 15px;
+    background-color: #4b553b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-cadastrar:hover {
+    background-color: #354024;
+}
+.rodape {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.rodape a {
+    color: #6c5234;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link-voltar {
+    display: block;
+    margin-top: 15px;
+    font-weight: normal !important;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.link-voltar:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 480px) {
+    .card-cadastro {
+        padding: 20px;
+    }
+}

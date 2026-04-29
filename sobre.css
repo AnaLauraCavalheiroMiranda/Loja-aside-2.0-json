@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-areas:
+        "cabeca"
+        "corpo"
+        "peh";
+    grid-template-columns: 1fr; 
+    grid-template-rows: 100px auto 100px; 
+    min-height: 100vh;
+}
+
+header {
+    background-color: #6C5234;
+    grid-area: cabeca;
+}
+
+footer {
+    background-color: #6C5234;
+    grid-area: peh;
+}
+
+main {
+    background-color: #E5D7C4; 
+    grid-area: corpo;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+}
+.container-sobre {
+    width: 100%;
+    max-width: 1000px;
+    padding: 60px 20px;
+}
+
+.banner-sobre {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.banner-sobre h1 {
+    font-size: 38px;
+    color: #4b553b; 
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+.banner-sobre p {
+    color: #6c5234;
+    font-style: italic;
+    font-size: 18px;
+}
+.conteudo-sobre {
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+.texto-sobre h2 {
+    color: #4b553b;
+    margin-bottom: 25px;
+    font-size: 26px;
+    border-bottom: 2px solid #e5d7c4; /* Uma linhazinha chique embaixo do título */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.texto-sobre p {
+    line-height: 1.8; /* Espaçamento entre linhas para não cansar a vista */
+    color: #444;
+    margin-bottom: 20px;
+    font-size: 17px;
+    text-align: justify; /* Deixa o texto alinhado dos dois lados */
+}
+
+.valores-grid {
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.valor {
+    flex: 1;
+    background-color: #f9f9f7;
+    padding: 25px;
+    border-radius: 15px;
+    border-top: 6px solid #4b553b; /* Detalhe colorido no topo do card */
+    text-align: center;
+    transition: transform 0.3s ease; /* Efeito de movimento */
+}
+
+.valor:hover {
+    transform: translateY(-10px); /* O card sobe um pouco quando passa o mouse */
+}
+
+.valor h3 {
+    color: #4b553b;
+    margin-bottom: 12px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.valor p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+}
+
+@media (max-width: 850px) {
+    .valores-grid {
+        flex-direction: column;
+    }
+    
+    .conteudo-sobre {
+        padding: 30px 20px;
+    }
+
+    .banner-sobre h1 {
+        font-size: 28px;
+    }
+}

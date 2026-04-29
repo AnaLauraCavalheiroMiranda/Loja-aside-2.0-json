@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-areas:
+        "cabeca"
+        "corpo"
+        "peh";
+    grid-template-columns: 1fr; 
+    grid-template-rows: 100px auto 100px; 
+    min-height: 100vh; /* Garante que o corpo ocupe a tela toda */
+}
+
+header {
+    background-color: #6C5234;
+    grid-area: cabeca;
+}
+aside {
+    display: none;
+}
+main {
+    background-color: #E5D7C4;
+    grid-area: corpo;
+}
+footer {
+    background-color: #6C5234;
+    grid-area: peh;
+}
+@media only screen and (max-width: 850px) {
+    body {
+        grid-template-areas:
+        "cabeca"
+        "corpo"
+        "peh";
+        grid-template-rows: 80px auto 80px; 
+    }
+}
+@media only screen and (max-width: 450px) {
+    body {
+        grid-template-areas:
+        "cabeca"
+        "corpo"
+        "peh";
+        grid-template-rows: 50px auto 50px; 
+    }
+}
+.pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.gato_produto{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: black 1px solid;
+}
+
+.card{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 40px;
+   border: black 2px solid;
+   background-color: #868a73;
+   width: 400px;
+   height: auto;
+   border-radius: 10px;
+   text-align: center;
+   align-items: center;
+   margin: 10px;
+}
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4b553b; 
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .botao:hover {
+    background-color: #354024 
+  }
+.linkp{
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+}
+
+/*aqui vai ser a parte onde meche mais nas esteticas das cards*/
+
+.cabecalho-produto {
+    display: flex;
+    justify-content: space-between; /* Empurra um para cada ponta */
+    align-items: center;
+    width: 100%;                   
+    margin-bottom: 15px;           /* Espaço antes do texto de descrição */
+}
+.preco {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4b553b;
+    margin: 0;         
+    white-space: nowrap; /* Impede que o preço quebre linha se o título for longo */
+}
+.descricao1{
+    text-transform: uppercase;
+    font-weight: 550;
+    font-size: 1.1rem; /* Diminuí um pouco para caber melhor na linha */ 
+    text-align: left;  
+    margin: 0;        
+}

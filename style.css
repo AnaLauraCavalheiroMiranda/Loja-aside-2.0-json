@@ -1,0 +1,115 @@
+
+body{
+    display: grid;
+    grid-template-areas:
+        "cabeca cabeca"
+        "branco corpo"
+        "peh peh";
+    grid-template-rows: 100px auto 100px;
+    grid-template-columns: 400px auto;         
+}
+
+header{
+    background-color: #6C5234;
+    grid-area: cabeca;
+}
+header .botao {
+    background-color: #E5D7C4;
+    color: #4E351E;           
+    border: 1px solid #4E351E;
+    transition: all 0.3s ease;
+    font-size: 14.4px;
+    text-transform: uppercase;
+}
+header .botao:hover {
+    background-color: #4E351E;
+    color: #E5D7C4;
+    transform: translateY(-2px);
+}
+aside{
+    background-color: #4E351E;
+    grid-area: branco;
+}
+main{
+    background-color: #E5D7C4;
+    grid-area: corpo;
+}
+footer{
+    background-color: #6C5234;
+    grid-area: peh;
+}
+@media only screen and (max-width: 850px){
+    body{
+        display: grid;
+        grid-template-areas: 
+        "cabeca"
+        "branco"
+        "corpo"
+        "peh";
+        grid-template-rows: 100px 50px auto 100px;
+        grid-template-columns: auto;
+    }
+}
+.letra{
+    color: #4E351E;
+}
+@media only screen and (max-width:450px){
+    body{
+        display: grid;
+        grid-template-areas:
+        "cabeca"
+        "corpo"
+        "peh";
+        grid-template-rows: 100px auto 100px;
+        grid-column: auto;
+    }
+    aside{
+        display: none;
+    }
+}
+.pai{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gato_produto{
+     width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    border: black 1px solid;
+}
+
+.card{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 50px;
+   border: black 2px solid;
+   background-color: #868a73;
+   width: 200px;
+   height: 400px;
+   border-radius: 10px;
+   text-align: center;
+   margin: 10px;
+}
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4b553b; 
+    border-radius: 5px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .botao:hover {
+    background-color: #354024;
+    transform: translateY(-2px);
+  }
+.linkp{
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+}
