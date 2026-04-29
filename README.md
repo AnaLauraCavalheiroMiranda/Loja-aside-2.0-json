@@ -1,0 +1,1 @@
+# Loja-aside-2.0-json
