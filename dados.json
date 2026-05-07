@@ -1,7 +1,16 @@
 [
 {
+        "nome" : "Matcha",
         "produto" : "Matcha Vibes: A energia do chá verde com máxima cremosidade.",
+        "imagem" : "matcha.jpg",
         "preco" : "R$ 24,00",
         "descricao" : "Essa bebida é um delicioso Milkshake de Matcha da linha Good Day, que combina a intensidade equilibrada do chá verde (matcha) com uma cremosa base de leite. Para finalizar, o drink é decorado com uma generosa camada de creme batido (chantilly) e chispas de chocolate (granulados) nos sabores ao leite e branco, garantindo uma textura suave e um sabor levemente adocicado e refrescante."
+},
+{
+        "nome" : "Pure Matcha",
+        "produto" : "Pure Matcha Latte: O sabor autêntico sem açúcar.",
+        "imagem" : "matcha2.jpg",
+        "preco" : "R$ 22,00",
+        "descricao" :"Esta bebida é um irresistível Latte Matcha gelado, que une a sofisticação e a intensidade vibrante do puro chá verde japonês com uma base de leite extremamente cremosa e refrescante. Preparado sem adição de açúcares, o drink preserva o perfil herbáceo e autêntico do matcha, criando uma experiência equilibrada e revigorante. Servido com cubos de gelo que mantêm o frescor do início ao fim, ele apresenta um visual mesclado fascinante, sendo a escolha perfeita para quem busca energia e sabor de forma leve e natural."
 }
 ]
